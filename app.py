@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-from sklearn.preprocessing import StandardScaler
+
 from sklearn.ensemble import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 

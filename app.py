@@ -17,3 +17,11 @@ def user_input_features():
                          'Jenis_Kelamin': [Jenis_Kelamin],
                          'Tinggi_Badan_cm': [Tinggi_Badan_cm],
                          'Status_Gizi': [Status_Gizi]})
+
+try:
+    # Load the model
+    model = pickle.load(open("model.pkl", "rb"))
+except FileNotFoundError:
+    st.error("Model tidak ditemukan. Pastikan file model.pkl ada di direktori yang benar.")
+except Exception as e:
+    st.error(f"Terjadi kesalahan saat memuat model: {e}")

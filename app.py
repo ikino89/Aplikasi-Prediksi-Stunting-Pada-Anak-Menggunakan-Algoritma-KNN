@@ -15,7 +15,7 @@ except ImportError:
 
 # Lanjutkan dengan kode Anda
 try:
-    model_klasifikasi = pickle.load(open('model_klasifikasi.pkl', 'rb'))
+    model_klasifikasi = pickle.load(open('model_klasifikasi.knn', 'rb'))
 except FileNotFoundError:
     st.error("File model_klasifikasi.pkl tidak ditemukan")
     st.stop()

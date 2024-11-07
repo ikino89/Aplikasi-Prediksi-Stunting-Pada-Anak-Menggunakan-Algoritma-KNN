@@ -1,13 +1,13 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import sklearn
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 
 
 
+model_klasifikasi = pickle.load(open('model_klasifikasi.pkl', 'rb'))
 
 st.title("Aplikasi Prediksi Stunting Anak")
 
